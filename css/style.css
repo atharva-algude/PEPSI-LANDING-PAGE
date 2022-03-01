@@ -9,18 +9,22 @@
 }
 
 section{
-    position: relative;
-    width: 100%;
+   
     min-height: 100vh;
-    padding: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+}
+.sec{
+    position: relative;
+    /* width: 100%; */
+    
+    padding: 50px;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
     background: #0062be;
     transition: 0.5s;
-
 }
-header{
+
+/* nav{
     position: absolute;
     top: 0;
     left: 0;
@@ -30,25 +34,80 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-header.logo{
+nav a .logo{
     position: relative;
     max-width: 80px;
 }
-header ul{
+nav ul{
     position: relative;
     display: flex;
 }
-header ul li{
+nav ul li{
     list-style: none;
 }
-header ul li a{
+nav ul li a{
     display: inline-block;
     color: #fff;
     font-weight: 400px;
     margin-left: 40px;
-    text-decoration: none;
-
+    text-decoration: none; 
+    
 }
+*/
+
+
+
+
+
+/* .hero{
+	height: 100vh;
+	width: 100%;
+	background-image: url(../img/wp3647894.webp);
+	background-size: cover;
+	background-position: center;
+} */
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 45px;
+	padding-left: 8%;
+	padding-right: 8%;
+}
+.logo{
+	color: white;
+	font-size: 25px;
+	letter-spacing: 1px;
+	cursor: pointer;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+span{
+	color: #f9004d;
+}
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px  25px;
+}
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* content */
 .content{
     position: relative;
@@ -60,7 +119,7 @@ header ul li a{
 .content .textbox{
     
         position: relative;
-        max-width: 600px;
+        /* max-width: 600px; */
 }
 .content .textbox h2{
     color: #fff;
@@ -85,7 +144,7 @@ header ul li a{
     margin-top: 20px;
     padding: 8px 20px;
     background: #fff;
-    color: #111;
+    color: maroon;
     border-radius: 40px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -95,15 +154,18 @@ text-transform: uppercase;
 
 .content .imgbox
 {
-    width: 600px;
+    /* width: 600px; */
     display: flex;
     margin-top: 50px;
     justify-content: flex-end;
+    overflow: hidden;
 
 }
 .content .imgbox img
 {
-    max-width: 260px;
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 .thumb{
     position: absolute;
@@ -151,52 +213,29 @@ display: flex;
     
 }
 /* media query */
-@media (max-width:800px){ 
-    
-
+@media(max-width:832px){
     html{
         font-size: 50%;
     }
-    .content .textbox .imgbox .thumb .sci{
-        width: 80%;
-        margin: 20%;
-    }
+    /* .imgbox{
+        display: none;
+    } */
+    .pepsi{
     
-  
- }
-
-@media (max-width:400px){
-
-    header{
-        width: 100vw;
+        
     }
-
-    
-
-    .content .textbox .imgbox .thumb .sci{
-        width: 80%;
-        margin: 20%;
-    }
- 
-   
-
-    
-
- } */
- /* @media (max-width:1399px){
-    html{
-        font-size: 75%;
-    }
-    /* body{
-        padding: 1rem 2rem;
-    }
-   #home{
-       background-image: none;
-       background:#111;
-   } */
 }
-/* @media (max-width: 595px){ */
-    /* html{ */
-        /* font-size: 50%; */
-    /* } */
-/* }  */
+
+
+
+/* @media (max-width:400px)
+{ 
+    body{
+        max-width: 100%;
+    }
+   .sec .content .textbox .imgbox .thumb .sci{
+    max-width: 100%;
+    
+}
+
+   } */
